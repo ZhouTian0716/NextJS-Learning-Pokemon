@@ -21,7 +21,7 @@ export default function Home({ pokemon }) {
       <Head>
         <title>Pokemon List</title>
       </Head>
-      <h2>Pokemon List SSR see github branch</h2>
+      <h2>Pokemon List with SSG</h2>
       <div className={styles.grid}>
         {pokemon.map((pokemon) => (
           <div className={styles.card} key={pokemon.id}>
