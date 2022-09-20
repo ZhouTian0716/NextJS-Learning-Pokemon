@@ -2,8 +2,8 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-// Remember this FUNCTION! This make it SSR
-export async function getServerSideProps() {
+// Remember this FUNCTION! This make it SSG
+export async function getStaticProps() {
   const res = await fetch(
     "https://jherr-pokemon.s3.us-west-1.amazonaws.com/index.json"
   );
