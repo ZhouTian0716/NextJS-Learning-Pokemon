@@ -27,6 +27,7 @@ export async function getStaticProps({ params }) {
     props: {
       pokemon: await resp.json(),
     },
+    // THIS SOLVED THE SSG issue with updates in API
     // revalidate: 30,
   };
 }
